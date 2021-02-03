@@ -2,11 +2,14 @@
 require_once 'Person.php';
 class Employee extends Person
 {
+    const COMPANY_NAME = 'ACME';
     private $jobTitle;
     private $jobNumber;
 
     public function __construct($jobTitle, $firstName, $lastName, $gender) {
         $this->jobTitle = $jobTitle;
+        echo self::COMPANY_NAME;
+        echo parent::EYE_COLOR;
         parent::__construct($firstName, $lastName, $gender);
     }
     public function sayHello() {

@@ -7,16 +7,10 @@
 <body>
 <?php
     require 'Employee.php';
-    $person1 = new Person('Nada','Blam','w');
-    echo $person1->sayHello();
     $employee1 = new Employee("Backend Developer","Nada", "Blam", "w");
-    $employee1->jobTitle = "tester";
-    $employee1->jobNumber = 5;
-    echo $employee1->jobTitle."<br>";
-    echo $employee1->jobNumber;
     echo "<br>";
-    echo $employee1->getGender();
-    echo $employee1->sayHello();
+    echo Employee::COMPANY_NAME."<br>";
+    echo Employee::EYE_COLOR."<br>";
 ?>   
 </body>
 </html>
@@ -26,9 +20,7 @@
 
 
 <!-- 
-Hello, my name is Nada Blam
-Tester
-5
-w
-Hello, I'm an employee. My name is Nada Blam
+ACMEbrownbrown  /// from constructors
+ACME
+brown
 -->

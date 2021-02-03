@@ -1,6 +1,7 @@
 <?php
 class Person 
 {
+    const EYE_COLOR = 'brown';
     protected $firstName;
     protected $lastName;
     private $gender;
@@ -9,6 +10,7 @@ class Person
         $this->firstName = $firstName;
         $this->lastName = $lastName;
         $this->gender = $gender;
+        echo self::EYE_COLOR;
     }
     public function sayHello() {
         return "Hello, my name is $this->firstName $this->lastName<br>";
