@@ -2,7 +2,7 @@
 class Person {
     protected $firstName;
     protected $lastName;
-    protected $gender;
+    private $gender;
 
     public function __construct($firstName, $lastName, $gender) {
         $this->firstName = $firstName;
