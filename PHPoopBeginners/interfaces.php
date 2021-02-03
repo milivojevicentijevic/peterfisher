@@ -14,4 +14,4 @@
 </body>
 </html>
 
-<!-- (nothing) -->
+<!-- We draw circle -->
