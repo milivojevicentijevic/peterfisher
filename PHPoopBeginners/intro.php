@@ -7,10 +7,9 @@
 <body>
 <?php
     require 'Employee.php';
-    $employee1 = new Employee("Backend Developer","Nada", "Blam", "w");
-    echo "<br>";
-    echo Employee::COMPANY_NAME."<br>";
-    echo Employee::EYE_COLOR."<br>";
+    echo Employee::generatePayslip();
+
+
 ?>   
 </body>
 </html>
@@ -20,7 +19,5 @@
 
 
 <!-- 
-ACMEbrownbrown  /// from constructors
-ACME
-brown
+A+
 -->

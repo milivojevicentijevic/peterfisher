@@ -2,14 +2,17 @@
 require_once 'Person.php';
 class Employee extends Person
 {
+    static $payeNumber = 100;
     const COMPANY_NAME = 'ACME';
     private $jobTitle;
-    private $jobNumber;
+    private static $jobNumber = 10;
+
+    public static function generatePayslip() {
+        return self::$bloodType;
+    }
 
     public function __construct($jobTitle, $firstName, $lastName, $gender) {
         $this->jobTitle = $jobTitle;
-        echo self::COMPANY_NAME;
-        echo parent::EYE_COLOR;
         parent::__construct($firstName, $lastName, $gender);
     }
     public function sayHello() {
