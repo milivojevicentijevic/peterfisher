@@ -1,8 +1,8 @@
 <?php
 class Person {
-    public $firstName;
-    public $lastName;
-    public $gender;
+    protected $firstName;
+    protected $lastName;
+    protected $gender;
 
     public function __construct($firstName, $lastName, $gender) {
         $this->firstName = $firstName;
